@@ -20,7 +20,7 @@
     }
   ],
   "scripts": {
-    "postdeploy": "echo $DATABASE_URL"
+    "postdeploy": "npx sequelize db:migrate --config /app/config/config.json --env production --migrations-path /app/migrations/"
   },
   "stack": {
     "stack": "heroku-20"
