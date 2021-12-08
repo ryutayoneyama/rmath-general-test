@@ -19,11 +19,10 @@
       "url": "heroku/nodejs"
     }
   ],
-  "environments": {
-    "test": {
-      "scripts": {
-        "test": "bundle exec rake test"
-      }
-    }
+  "scripts": {
+    "postdeploy": "echo $DATABASE_URL"
+  },
+  "stack": {
+    "stack": "heroku-20"
   }
 }
