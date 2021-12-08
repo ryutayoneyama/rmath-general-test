@@ -10,7 +10,8 @@
   },
   "addons": [
     {
-      "plan": "heroku-postgresql"
+      "plan": "heroku-postgresql:hobby-dev",
+      "as": "rmath-general-test-db"
     }
   ],
   "buildpacks": [
