@@ -1,0 +1,28 @@
+{
+  "name": "rmath-general-test",
+  "description": "this app will be used only test for myself",
+  "repository": "https://github.com/ryutayoneyama/rmath-general-test",
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql"
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "environments": {
+    "test": {
+      "scripts": {
+        "test": "bundle exec rake test"
+      }
+    }
+  }
+}
