@@ -1,8 +1,5 @@
 describe("test of test", () => {
-    test('test of test', ()=>{
+    test('1 = 1', ()=>{
         expect(1).toEqual(1);
-    });
-    test('test of test 2', ()=>{
-        expect(2).toEqual(2);
     });
 });
