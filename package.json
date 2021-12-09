@@ -6,7 +6,9 @@
   "license": "MIT",
   "scripts": {
     "start": "node index.js",
-    "test": "jest --detectOpenHandles"
+    "test-dev": "export NODE_ENV=development; jest --silent=false --verbose false --detectOpenHandles",
+    "test-heroku": "yarn test-heroku-db:migrate; jest --detectOpenHandles",
+    "test-heroku-db:migrate": "npx sequelize db:migrate --config /app/config/config.json --env test --migrations-path /app/migrations/"
   },
   "dependencies": {
     "express": "^4.17.1",
