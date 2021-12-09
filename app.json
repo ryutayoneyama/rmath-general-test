@@ -29,7 +29,7 @@
             "heroku-postgresql:in-dyno"
         ],
         "scripts": {
-          "test": "yarn test"
+          "test": "yarn test-heroku"
         }
       }
     }
