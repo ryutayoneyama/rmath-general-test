@@ -7,4 +7,9 @@ router.get('/test1',async (req,res)=>{
     res.send(tests);
 });
 
+router.get('/demo',async (req,res)=>{
+    const demo = await db.demo.findAll({});
+    res.send(demo);
+});
+
 module.exports = router;
