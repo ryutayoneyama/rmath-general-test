@@ -6,8 +6,9 @@ describe("db test", () => {
         expect(test.length).toBeGreaterThanOrEqual(0);
     });
 
-    test('"test2" exists',async ()=>{
-        const test = await db.test2.findAll({});
-        expect(test.length).toBeGreaterThanOrEqual(0);
+    test('"demo" exists',async ()=>{
+        const demo = await db.demo.findAll({});
+        expect(demo.length).toBeGreaterThanOrEqual(0);
+
     });
 });
