@@ -10,6 +10,7 @@ router.get('/test1',async (req,res)=>{
 router.get('/demo',async (req,res)=>{
     const demo = await db.demo.findAll({});
     res.send(demo);
+
 });
 
 module.exports = router;
